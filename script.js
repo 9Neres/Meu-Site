@@ -3,13 +3,11 @@ let navbar = document.querySelector(".navbar");
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
-// Alternar menu ao clicar no ícone
 menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("bx-x");
     navbar.classList.toggle("active");
 });
 
-// Efeito de navegação ativa ao rolar a página
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -29,7 +27,6 @@ window.onscroll = () => {
         }
     });
 
-    // Fechar menu ao clicar em um link (opcional)
     navbar.classList.remove("active");
     menuIcon.classList.remove("bx-x");
 };
