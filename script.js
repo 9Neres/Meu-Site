@@ -27,7 +27,10 @@ window.onscroll = () => {
         }
     });
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> c23604d5fea8eb3026aadcd2730df64f9d2c1a69
     navbar.classList.remove("active");
     menuIcon.classList.remove("bx-x");
 };

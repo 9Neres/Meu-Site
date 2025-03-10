@@ -425,7 +425,7 @@ span{
     line-height: 22px;
 }
 
-/* Scrollbar Customizada */
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -666,7 +666,11 @@ span{
 }
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
     .skills-container {
+=======
+    .services-container {
+>>>>>>> c23604d5fea8eb3026aadcd2730df64f9d2c1a69
         grid-template-columns: 1fr; 
         gap: 1.5rem;
     }
