@@ -19,7 +19,7 @@ body, html {
     margin: 50;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+    overflow-x: hidden; 
 }
 
 html{
@@ -93,7 +93,7 @@ body{
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: var(--main-color); /* Cor da animação */
+    background-color: var(--main-color); 
     transition: 0.3s ease;
 }
 
@@ -157,7 +157,7 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
-    overflow: hidden; /* Impede que a imagem ultrapasse os limites do círculo */
+    overflow: hidden; 
 }
 
 .home-img img {
@@ -277,11 +277,11 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: " Desenvolvedor Back-End ";
+        content: " Desenvolvedor Data-Science ";
     }
     21%,
     40%{
-        content: " Front-end ";
+        content: " Também Full-Stack :)";
     }
     41%,
     60%{
@@ -289,11 +289,11 @@ span{
     }
     61%,
     80%{
-        content: "1 ano e meio na área de T.I ";
+        content: " Quase dois anos na área";
     }
     81%,
     100%{
-        content: " GO / Goiás ";
+        content: " Residente de GO / Goiás ";
     }
 }
 
@@ -439,61 +439,68 @@ span{
     width: 50px;
 }
 
-.services{
+.skills{
     background: var(--bg-color);
     color: white;
+    padding: 5rem 2rem;
+    text-align: center;
 }
 
-.services h2{
+.skills h2{
     margin-bottom: 5rem;
     color: white;
 }
 
-.services-container{
+.skills-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.service-box{
+.skills-box{
     background-color: var(--main-color);
     height: 300px;
-    border-radius: 3rem;
+    border-radius: 10px;
     border: 5px solid transparent;
     cursor: pointer;
+    padding: 1.5rem;
     transition: 0.4s ease-in-out;
 }
 
-.service-box:hover{
+.skills-box:hover{
     background: transparent;
     color: white;
     border: 3px solid var(--main-color);
     transform: scale(1.03);
 }
 
-.service-box .service-info{
+.skills-box .skills-info{
     display: flex;
     flex-direction: column;
     text-align: left;
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 4rem 4rem;
+    padding: 2rem 2rem;
 }
 
-.service-info h4{
-    font-size: 3rem;
+.skills-info h4{
+    font-size: 2.2rem;
     font-weight: 800;
     line-height: 2;
+    margin-bottom: 1rem;
 }
 
-.service-info p{
-    font-size: 2.5rem;
+.skills-info p{
+    font-size: 2.3rem;
     font-weight: 600;
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
+    margin-bottom: 0.8rem;
 }
 
 .contact {
@@ -574,13 +581,13 @@ span{
     opacity: 0.7;
     margin-top: 10rem;
 }
-/*tamanho para tipos de tela*/
+
 @media(max-width:1285px){
     html{
         font-size: 55%;
     }
 
-    .services-container{
+    .skills-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
@@ -613,7 +620,7 @@ span{
         left: 0;
     }
 
-    .services{
+    .skills{
         padding-bottom: 7rem;
     }
 
@@ -657,49 +664,22 @@ span{
     }
     
 }
-.services {
-    padding: 5rem 2rem;
-    text-align: center;
-}
-
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.service-box {
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-.service-info h4 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-}
-
-.service-info p {
-    font-size: 1.8rem;
-    margin-bottom: 0.8rem;
-}
 
 @media (max-width: 768px) {
-    .services-container {
-        grid-template-columns: 1fr; /* Apenas 1 coluna */
+    .skills-container {
+        grid-template-columns: 1fr; 
         gap: 1.5rem;
     }
 
-    .service-box {
+    .skills-box {
         padding: 3rem;
     }
 
-    .service-info h4 {
+    .skills-info h4 {
         font-size: 2rem;
     }
 
-    .service-info p {
+    .skills-info p {
         font-size: 1.6rem;
     }
 }
