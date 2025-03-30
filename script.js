@@ -29,4 +29,28 @@ window.onscroll = () => {
 
     navbar.classList.remove("active");
     menuIcon.classList.remove("bx-x");
-};
+}
+
+let currentIndex = 0; 
+const slides = document.querySelectorAll('.slide'); 
+const totalSlides = slides.length; 
+const slidesToShow = 3; 
+const slideWidth = slides[0].offsetWidth; 
+
+function showSlides() {
+    document.querySelector('.slider').style.transform = `translateX(-${(currentIndex * slideWidth)}px)`;
+}
+
+function nextSlide() {
+    if (currentIndex + slidesToShow < totalSlides) {
+        currentIndex += slidesToShow;
+    } else {
+        currentIndex = 0; 
+    }
+    showSlides();
+}
+
+showSlides();
+
+
+setInterval(nextSlide, 7000);
