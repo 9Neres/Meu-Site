@@ -151,22 +151,6 @@ span{
     line-height: 1;
 }
 
-/**.home-img {
-    position: relative;
-    top: 3rem;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-    overflow: hidden; 
-}
-
-.home-img img {
-    width: 100%; 
-    border-radius: 50%;
-}*/
-
 .loader {
     width: 112px;
     height: 112px;
@@ -402,16 +386,8 @@ span{
     }
 }
 
-/*.home-img:hover {
-    box-shadow: 
-        0 0 25px var(--main-color),
-        0 0 50px var(--main-color),
-        0 0 100px var(--main-color);
-}*/
-
-
 .home-content p{
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
