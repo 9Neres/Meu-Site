@@ -592,19 +592,19 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: " Desenvolvedor Data-Science ";
+        content: " Engenheiro de Software ";
     }
     21%,
     40%{
-        content: " Também Full-Stack :)";
+        content: " Estudante de Analista de Dados :)";
     }
     41%,
     60%{
-        content: " Tenho 18 anos ";
+        content: " Tenho 19 anos ";
     }
     61%,
     80%{
-        content: " Quase dois anos na área";
+        content: " Dois anos na área";
     }
     81%,
     100%{
